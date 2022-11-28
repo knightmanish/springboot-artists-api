@@ -43,9 +43,9 @@ All URIs are relative to *https://company.io*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*DefaultApi* | [**artistsPost**](docs/DefaultApi.md#artistsPost) | **POST** /artists | 
-*DefaultApi* | [**artistsUsernameGet**](docs/DefaultApi.md#artistsUsernameGet) | **GET** /artists/{username} | 
-*DefaultApi* | [**getAllArtists**](docs/DefaultApi.md#getAllArtists) | **GET** /artists | 
+*DefaultApi* | [**artistsPost**](docs/DefaultApi.md#artistsPost) | **POST** /artists | localhost:8080/v1/artists
+*DefaultApi* | [**artistsUsernameGet**](docs/DefaultApi.md#artistsUsernameGet) | **GET** /artists/{username} | localhost:8080/v1/artists/{username}
+*DefaultApi* | [**getAllArtists**](docs/DefaultApi.md#getAllArtists) | **GET** /artists |  localhost:8080/v1/artists?page=0&pageLimit=10&sortField=artistName&order=ASC
 
 ## Documentation for Models
 The lib was generated using [swagger-codegen](https://github.com/swagger-api/swagger-codegen)
@@ -66,8 +66,8 @@ Authentication schemes defined for the API:
 
 Api key can be changed in artist-api/src/main/resources/application.properties
 
-###Known issues
-- Some exceptions require further handing
+### Known issues
+- Some exceptions require further handling
     - HTTP 503
     - HTTP 429
 - Code coverage for Rest Controller and various other Handlers.
